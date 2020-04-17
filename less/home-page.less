@@ -1,13 +1,10 @@
 .home {
-
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -58,4 +55,42 @@
       margin-bottom: 30px;
     }
   }
-}// home
+
+  .btn {
+    .button-mix(90%, 40px, teal, white);
+    text-align: center;
+    border-radius: 15px;
+  }
+  @media @mobile {
+    header h2,
+    p {
+      margin: 0px 10px;
+    }
+
+    .content-section {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      width: 100%;
+      margin: 10px 10px;
+      .text-content {
+        width: 98%;
+      }
+      .img-content {
+        width: 98%;
+      }
+    }
+    .inverse-content {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .content-pick {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      .destination {
+        width: 100%;
+      }
+    }
+  }
+} // home
